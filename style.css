@@ -4,6 +4,9 @@
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e9ecef;
+
     display: flex;
 
     height: 100vh;
@@ -15,19 +18,60 @@ body{
     background-color: #14213d;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.content h1{
+    font-size: 32px;
+}
+
 #container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
-    width: 400px;
+    width: 70vh;
+    height: 70vh;
+
+    background-color: #e9ecef;
 }
 
 .grid{
     background-color: #e9ecef;
     height: 25px;
     flex-basis: 25px;
-    outline: 1px solid #ced4da;
+    outline: 1px solid #d9dde2;
     outline-offset: -1px;
 }
 
+.change-color{
+    background-color: #e63946;
+}
 
+.btn{
+    border-style: none;
+    background-color: #e9ecef;
+    color: #14213d;
+
+    border-radius: 5px;
+    padding: 8px 15px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease 0s;
+}
+
+.btn:hover{
+    background-color: #e63946;
+    color: #e9ecef;
+}
+
+
+/* https://medium.com/@lizahumuza/how-to-create-a-responsive-grid-using-js-4c872aca0c68 */
