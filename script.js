@@ -1,7 +1,6 @@
 const container = document.querySelector('#container')
 const button = document.querySelector('.btn')
 
-
 function createGrid(n){
 
     container.innerHTML = ''
@@ -18,14 +17,23 @@ function createGrid(n){
             div.style.height = `${size}%`;
 
 
+                const r = Math.floor(Math.random() * 256);
+                const g = Math.floor(Math.random() * 256);
+                const b = Math.floor(Math.random() * 256);
+
+                const colorRGB = `rgb(${r}, ${g}, ${b})`;
+
+                // div.style.backgroundColor = colorRGB;
+
 
             div.addEventListener("mouseover", function (e) {
                 const changeColor = e.target    
                 
                 if (changeColor.classList.contains('grid')) {
         
-                changeColor.classList.add('change-color');
-        
+                // changeColor.classList.add('change-color');
+                    div.style.backgroundColor = colorRGB;
+                    
                 }
             })
 
