@@ -32,7 +32,7 @@ This project was built as part of The Odin Project curriculum to practice JavaSc
 
 ## Live Demo
 
-[https://etch-a-sketch-rho-pearl.vercel.app](#)
+https://etch-a-sketch-rho-pearl.vercel.app
 
 ## Credits
 
